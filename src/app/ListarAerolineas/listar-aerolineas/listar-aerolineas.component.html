@@ -1,0 +1,21 @@
+<!-- <h3>{{resultados}}</h3> -->
+<div class="container">
+    <h1>Listado de Aerolineas</h1>
+
+    <table class="table table-bordered" width="100%" [cellSpacing]="0">
+        <thead>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Pais</th>
+            <th scope="col">IATA</th>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let aerolinea of resultados">
+                <td scope="row">{{aerolinea.id}}</td>
+                <td scope="row">{{aerolinea.name}}</td>
+                <td scope="row">{{aerolinea.country}}</td>
+                <td scope="row">{{aerolinea.iata}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
